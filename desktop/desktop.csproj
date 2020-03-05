@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <ItemGroup>
+    <ProjectReference Include="..\microservices\calendar\domain\domain.fsproj" />
+    <Reference Include="calendarDomain.dll"> <HintPath>..\microservices\calendar\domain\bin\Debug\netstandard2.0\calendarDomain.dll</HintPath></Reference>
+    <ProjectReference Include="..\microservices\todo\domain\domain.fsproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Prism.Unity" Version="7.2.0.1422" />
+    <PackageReference Include="ProcessX" Version="1.2.0" />
+    <PackageReference Include="ReactiveProperty" Version="6.2.0" />
+    <PackageReference Include="ZString" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\bff\idl\idl.fsproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+    <NullableReferenceTypes>true</NullableReferenceTypes>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+</Project>

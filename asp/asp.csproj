@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <ProjectReference Include="..\microservices\calendar\domain\domain.fsproj" />
+    <ProjectReference Include="..\microservices\todo\domain\domain.fsproj" />
+    <ProjectReference Include="..\bff\idl\idl.fsproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MagicOnion" Version="3.0.10" />
+    <PackageReference Include="ProcessX" Version="1.2.0" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+    <NullableReferenceTypes>true</NullableReferenceTypes>
+  </PropertyGroup>
+
+
+
+</Project>

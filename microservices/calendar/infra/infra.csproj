@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\domain\domain.fsproj" />
+    <Reference Include="calendarDomain.dll"> <HintPath>..\domain\bin\Debug\netstandard2.0\calendarDomain.dll</HintPath></Reference>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+    <AssemblyName>calendarInfra</AssemblyName>
+    <NullableReferenceTypes>true</NullableReferenceTypes>
+  </PropertyGroup>
+
+</Project>

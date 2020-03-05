@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\microservices\calendar\domain\domain.fsproj" />
+    <ProjectReference Include="..\..\microservices\todo\domain\domain.fsproj" />
+    <ProjectReference Include="..\idl\idl.fsproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+</Project>
